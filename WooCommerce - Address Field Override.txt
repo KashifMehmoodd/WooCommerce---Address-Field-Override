@@ -1,0 +1,6 @@
+add_filter('woocommerce_default_address_fields', 'override_address_fields');
+function override_address_fields( $address_fields ) {
+$address_fields['address_1']['placeholder'] = ' ';
+$address_fields['address_2']['placeholder'] = ' ';
+return $address_fields;
+}
